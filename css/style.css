@@ -34,18 +34,21 @@ button {
 /* HEADER */
 
 header {
-    display: grid;
-    grid-template-columns: 0.7fr 1.6fr 0.7fr;
-    justify-content: space-between;
-    padding: 2rem 2rem;
-    gap: 3em;
-    align-items: center;
-    background-image: linear-gradient(to top, black, var(--font-color));
     overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+    #header {
+        display: grid;
+        grid-template-columns: 0.7fr 1.6fr 0.7fr;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        gap: 3em;
+        align-items: center;
+        background-image: linear-gradient(to top, black, var(--font-color));
+    }
 
     #logo {
         display: flex;
@@ -118,11 +121,12 @@ header {
 
 /* MAIN */
 
+
 #subscription {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 3rem;
     justify-content: space-between;
     line-height: 2.5rem;
     background-color: white;
@@ -255,4 +259,22 @@ footer li ul {
 .newsletter {
     padding: 1rem 0 0.5em;
     opacity: 0.7;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1600px) {
+    #carshow img {
+        height: 15rem;
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    #subscription {
+        display: flex;
+        justify-content: center;
+        
+    }
 }
