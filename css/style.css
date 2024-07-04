@@ -40,70 +40,81 @@ header {
     padding: 2rem 2rem;
     gap: 3em;
     align-items: center;
+    background-image: linear-gradient(to top, black, var(--font-color));
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu nav ul { 
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #login button {
+        height: 2rem;
+        width: 4.5rem;
+        background-color: gainsboro;
+        color: black;
+    }
+
+    .search-bar {
+        padding-left: 10px;
+        align-items: stretch;
+    }
+
+    .search-bar input {
+        width: 50%;
+        height: 1.8em;
+        border: 4px dashed black;
+        background-color: gainsboro;
+    }
+
+    .search-bar input:focus {
+        border: 0.2em solid green;
+        height: 2.5rem;
+    }
+
+    .search-bar button:focus {
+        align-items: flex-end;
 }
 
-#logo img {
-    width: 3.5rem;
-    height: 3.5rem;
-    padding: 0 0.5rem;
-}
-
-#menu nav ul { 
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-}
-
-#menu a{
-    text-decoration: none;
-    color: white;
-}
-
-#menu a:hover {
-    text-decoration: underline;
-    color: aqua;
-}
-
-#login {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#login button {
-    height: 2rem;
-    width: 4.5rem;
-    background-color: gainsboro;
-    color: black;
-}
-
-.search-bar {
-    padding-left: 10px;
-    align-items: stretch;
-}
-
-.search-bar input {
-    width: 50%;
-    height: 1.8em;
-    border: 4px dashed black;
-    background-color: gainsboro;
-}
-
-.search-bar input:focus {
-    border: 0.2em solid green;
-    height: 2.5rem;
-}
-
-.search-bar button:focus {
-    align-items: flex-end;
-}
 
 /* MAIN */
 
@@ -199,12 +210,14 @@ header {
     height: 18rem;
 }
 
- /* FOOTER */
+
+/* FOOTER */
 
 footer {
     line-height: 2rem;
-    height: 5rem;
+    height: 15.5rem;
     padding: 2rem 2rem;
+    background-image: linear-gradient(to bottom, black, var(--font-color));
 }
 
 footer a {

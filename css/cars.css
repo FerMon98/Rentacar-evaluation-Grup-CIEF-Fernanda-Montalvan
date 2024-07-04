@@ -40,115 +40,162 @@ header {
     padding: 2rem 2rem;
     gap: 3em;
     align-items: center;
+    background-image: linear-gradient(to top, black, var(--font-color));
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #logo img {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+
+    #menu nav ul { 
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #login button {
+        height: 2rem;
+        width: 4.5rem;
+        background-color: gainsboro;
+        color: black;
+    }
+
+    .search-bar {
+        padding-left: 10px;
+        align-items: stretch;
+    }
+
+    .search-bar input {
+        width: 50%;
+        height: 1.8em;
+        border: 4px dashed black;
+        background-color: gainsboro;
+    }
+
+    .search-bar input:focus {
+        border: 0.2em solid green;
+        height: 2.5rem;
+    }
+
+    .search-bar button:focus {
+        align-items: flex-end;
 }
 
-#logo img {
-    width: 3.5rem;
-    height: 3.5rem;
-    padding: 0 0.5rem;
-}
-
-#menu nav ul { 
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-}
-
-#menu a{
-    text-decoration: none;
-    color: white;
-}
-
-#menu a:hover {
-    text-decoration: underline;
-    color: aqua;
-}
-
-#login {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#login button {
-    height: 2rem;
-    width: 4.5rem;
-    background-color: gainsboro;
-    color: black;
-}
-
-.search-bar {
-    padding-left: 10px;
-    align-items: stretch;
-}
-
-.search-bar input {
-    width: 50%;
-    height: 1.8em;
-    border: 4px dashed black;
-    background-color: gainsboro;
-}
-
-.search-bar input:focus {
-    border: 0.2em solid green;
-    height: 2.5rem;
-}
-
-.search-bar button:focus {
-    align-items: flex-end;
-}
 
 /* MAIN */
 
+main {
+    background-color: rgba(220, 220, 220, 0.871);
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10rem;
+        gap: 2rem;
+    }
+
+    .carro {
+        border: 2px solid black;
+        padding: 2rem;
+        line-height: 2rem;
+        border-radius: 50px;
+    }
+
+    .carro img {
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .carro button {
+        height: 2rem;
+        width: 10rem;
+        background-color: navy;
+        color: white;
+        border-radius: 10px;
+        border: 3px solid white;
+}
 
 
- /* FOOTER */
 
- footer {
+/* FOOTER */
+
+footer {
     line-height: 2rem;
-    height: 5rem;
+    height: 15.5rem;
     padding: 2rem 2rem;
+    background-image: linear-gradient(to bottom, black, var(--font-color));
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
 
-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-footer li {
-    list-style-type: none;
-}
+    footer li {
+        list-style-type: none;
+    }
 
-footer li ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+    footer li ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-.social-media {
-    display: flex;
-    flex-direction: row;
-}
+    .social-media {
+        display: flex;
+        flex-direction: row;
+    }
 
-.social-media img{
-    width: 2rem;
-    height: 2rem;
-}
+    .social-media img{
+        width: 2rem;
+        height: 2rem;
+    }
 
-.newsletter {
-    padding: 1rem 0 0.5em;
-    opacity: 0.7;
+    .newsletter {
+        padding: 1rem 0 0.5em;
+        opacity: 0.7;
 }
