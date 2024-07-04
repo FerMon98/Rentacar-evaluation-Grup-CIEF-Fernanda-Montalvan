@@ -6,6 +6,10 @@
     box-sizing: border-box;   
 }
 
+:root {
+    --font-color: #C71585;
+}
+
 body {
     background-color: black;
     color: white;
@@ -15,6 +19,16 @@ body {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+}
+
+button {
+    border-radius: 20px;
+    border: 3px solid rgb(41, 123, 123);
 }
 
 /* HEADER */
@@ -39,15 +53,6 @@ header {
     height: 3.5rem;
     padding: 0 0.5rem;
 }
-
-#logo h1 {
-    font-size: 3vw;
-    font-weight: 600;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 
 #menu nav ul { 
     display: flex;
@@ -77,8 +82,6 @@ header {
     width: 4.5rem;
     background-color: gainsboro;
     color: black;
-    border-radius: 20px;
-    border: 3px solid rgb(41, 123, 123);
 }
 
 .search-bar {
@@ -111,6 +114,28 @@ header {
     padding: 2rem 3rem;
     justify-content: space-between;
     line-height: 2.5rem;
+    background-color: white;
+    color: var(--font-color);
+}
+
+#subinfo button {
+    width: 7rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+
+#subinfo button:hover {
+    background-color: rgb(41, 123, 123);
+}
+
+#subinfo a {
+    text-decoration: none;
+    color: navy;
+}
+
+#subinfo a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
 }
 
 #carshow {
@@ -125,10 +150,95 @@ header {
     height: 18rem;
     border-radius: 30px;
     opacity: 0.8;
+    border: 4px solid black;
+}
+
+#offer {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    padding: 2rem 6rem;
+    height: 23rem;
+}
+
+#offer a {
+    text-decoration: none;
+    color: #00008B;
+}
+
+#offer a:hover {
+    color: var(--font-color);
+}
+
+#offer button {
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem 0;
+    font-size: larger;
+    background-color: #FFF5EE;
+}
+
+#carshow {
+    background-color: white;
+    color: var(--font-color);
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+#showimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#showimg img {
+    background-color: black;
+    border: 3px solid var(--font-color);
+    padding: 2rem;
+    margin: 2rem 1rem;
+    height: 18rem;
 }
 
  /* FOOTER */
 
- footer {
-    display: none;
+footer {
+    line-height: 2rem;
+    height: 5rem;
+    padding: 2rem 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.newsletter {
+    padding: 1rem 0 0.5em;
+    opacity: 0.7;
 }

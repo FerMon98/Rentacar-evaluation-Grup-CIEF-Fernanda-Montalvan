@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+:root {
+    --font-color: #C71585;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+}
+
+button {
+    border-radius: 20px;
+    border: 3px solid rgb(41, 123, 123);
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    gap: 3em;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0 0.5rem;
+}
+
+#menu nav ul { 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#login button {
+    height: 2rem;
+    width: 4.5rem;
+    background-color: gainsboro;
+    color: black;
+}
+
+.search-bar {
+    padding-left: 10px;
+    align-items: stretch;
+}
+
+.search-bar input {
+    width: 50%;
+    height: 1.8em;
+    border: 4px dashed black;
+    background-color: gainsboro;
+}
+
+.search-bar input:focus {
+    border: 0.2em solid green;
+    height: 2.5rem;
+}
+
+.search-bar button:focus {
+    align-items: flex-end;
+}
+
+/* MAIN */
+
+
+
+ /* FOOTER */
+
+ footer {
+    line-height: 2rem;
+    height: 5rem;
+    padding: 2rem 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.newsletter {
+    padding: 1rem 0 0.5em;
+    opacity: 0.7;
+}
