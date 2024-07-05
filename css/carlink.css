@@ -1,0 +1,71 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+main h4 {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+}
+
+#car {
+    padding: 0.5rem 2rem;
+}
+
+#description {
+    line-height: 5rem;
+    background-color: rgb(57, 56, 56);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+}
+
+#description li{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style-type: none;
+}
+
+#description li img {
+    width: fit-content;
+    height: fit-content;
+}
+
+#description li p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+#buy {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Precio {
+    font-size: 1.5rem;
+}
+
+#garantizado {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50px;
+    height: 3.5rem;
+    width: 30rem;
+    padding: 0 0 3rem;
+}
+
+
+#buy button {
+    font-size: 1.5rem;
+    width: 8rem;
+    height: 3.5rem;
+}

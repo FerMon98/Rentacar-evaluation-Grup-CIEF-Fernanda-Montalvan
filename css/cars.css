@@ -1,34 +1,43 @@
 main {
     background-color: rgba(220, 220, 220, 0.871);
     color: black;
-    display: flex;
-    justify-content: center;
 }
 
-    section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 10rem;
-        gap: 2rem;
-    }
+h2 {
+    text-align: center;
+}
 
-    .carro {
-        border: 2px solid black;
-        padding: 2rem;
-        line-height: 2rem;
-        border-radius: 50px;
-    }
+main h2 { 
+    padding: 3rem;
+    font-size: 4rem;
+    -webkit-text-stroke: 3px white;
+}
 
-    .carro img {
-        width: 18rem;
-        height: 13rem;
-    }
+main section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .carro button {
-        height: 2rem;
-        width: 10rem;
-        background-color: navy;
-        color: white;
-        border-radius: 10px;
-        border: 3px solid white;
+.carro {
+    border: 2px solid black;
+    padding: 2rem;
+    line-height: 2rem;
+    border-radius: 50px;
+}
+
+.carro img {
+    width: 18rem;
+    height: 13rem;
+}
+
+.carro button {
+    height: 2rem;
+    width: 10rem;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid white;
 }
