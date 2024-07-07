@@ -21,6 +21,7 @@ main h4 {
     background-color: rgb(57, 56, 56);
     padding: 0.5rem 2rem;
     border-radius: 50px;
+    height: 45rem;
 }
 
 #description li{
@@ -45,7 +46,6 @@ main h4 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-
 }
 
 #Precio {
@@ -58,9 +58,13 @@ main h4 {
     text-align: center;
     font-size: 2rem;
     border-radius: 50px;
-    height: 3.5rem;
+    height: 4.5rem;
     width: 30rem;
-    padding: 0 0 3rem;
+}
+
+#garantizado p {
+    display: flex;
+    margin: 0 3rem;
 }
 
 
@@ -68,4 +72,12 @@ main h4 {
     font-size: 1.5rem;
     width: 8rem;
     height: 3.5rem;
+    margin: 2rem 1rem;
+}
+
+#buy button:hover {
+    background-color: rgb(41, 123, 123);
+    color: white;
+    width: 10rem;
+    height: 5rem;
 }
