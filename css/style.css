@@ -121,6 +121,8 @@ header {
 
 /* MAIN */
 
+
+
 #subscriptionDiv {
     background-color: white;
     color: var(--font-color);
@@ -137,25 +139,33 @@ header {
     line-height: 2.5rem;
 }
 
-#subinfo button {
-    width: 7rem;
-    height: 2.5rem;
-    margin-top: 2rem;
+#subinfo {
+    button {
+        width: 7rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    button:hover {
+        background-color: rgb(41, 123, 123);
+    }
+
+    a {
+        text-decoration: none;
+        color: navy;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 0.4rem;
+    }
+
+    a:hover {
+        outline:thick ;
+        background-color: rgb(41, 123, 123);
+        color: whitesmoke;
+        text-decoration: underline;
+    }
 }
 
-#subinfo button:hover {
-    background-color: rgb(41, 123, 123);
-}
-
-#subinfo a {
-    text-decoration: none;
-    color: navy;
-}
-
-#subinfo a:hover {
-    text-decoration: underline;
-    color: whitesmoke;
-}
 
 #carshow {
     display: flex;
