@@ -245,44 +245,46 @@ footer {
     height: 15.5rem;
     padding: 2rem 2rem;
     background-image: linear-gradient(to bottom, black, var(--font-color));
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0.5rem;
+    }
+    
+    .social-media img{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .newsletter {
+        padding: 1rem 0 0.5em;
+        opacity: 0.7;
+    }
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
 
-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-footer li {
-    list-style-type: none;
-}
-
-footer li ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.social-media {
-    display: flex;
-    flex-direction: row;
-    padding: 0 0.5rem;
-}
-
-.social-media img{
-    width: 2rem;
-    height: 2rem;
-}
-
-.newsletter {
-    padding: 1rem 0 0.5em;
-    opacity: 0.7;
-}
 
 
 /* RESPONSIVENESS */
